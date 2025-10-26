@@ -221,6 +221,7 @@ Avantages :
             </button>
             <a 
                href="/CV_AhmedYAICH.pdf" 
+               target="_blank"
                download="CV_AhmedYAICH.pdf"
                className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
             >
