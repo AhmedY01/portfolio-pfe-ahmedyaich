@@ -22,7 +22,7 @@ import app33 from './assets/app33.png';
 import app44 from './assets/app44.png';
 import app55 from './assets/app55.png';
 import app66 from './assets/app66.png';
-import i1 from './assets/i1.png';
+import img1 from './assets/img1.png';
 import i2 from './assets/i2.png';
 import i3 from './assets/i3.png';
 import i4 from './assets/i4.png';
@@ -147,7 +147,7 @@ Avantages :
 
       `,
       screenshots: [
-        i1,i2,i3,i4,i5,i6,i7,i8
+        img1,i2,i3,i4,i5,i6,i7,i8
       ]
     }
   ];
