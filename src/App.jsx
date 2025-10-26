@@ -219,10 +219,14 @@ Avantages :
             >
               Me contacter pour un PFE
             </button>
-            <button className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2">
-              <Download size={20} />
-              Télécharger CV
-            </button>
+            <a 
+               href="/CV_Ahmed_Yaich .pdf" 
+               download="CV_Ahmed_Yaich .pdf"
+               className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
+            >
+                <Download size={20} />
+                 Télécharger CV
+            </a>
           </div>
           
         </div>
