@@ -22,14 +22,14 @@ import app33 from './assets/app33.png';
 import app44 from './assets/app44.png';
 import app55 from './assets/app55.png';
 import app66 from './assets/app66.png';
-import img1 from './assets/img1.png';
-import i2 from './assets/i2.png';
-import i3 from './assets/i3.png';
-import i4 from './assets/i4.png';
-import i5 from './assets/i5.png';
-import i6 from './assets/i6.png';
-import i7 from './assets/i7.png';
-import i8 from './assets/i8.png';
+import img1 from './assets/1.png';
+import img2 from './assets/2.png';
+import img3 from './assets/3.png';
+import img4 from './assets/4.png';
+import img5 from './assets/5.png';
+import img6 from './assets/6.png';
+import img7 from './assets/7.png';
+import img8 from './assets/8.png';
 import info1 from './assets/info1.png';
 import vb1 from './assets/vb1.png';
 import esse1 from './assets/esse1.png';
@@ -147,7 +147,7 @@ Avantages :
 
       `,
       screenshots: [
-        img1,i2,i3,i4,i5,i6,i7,i8
+        img1,img2,img3,img4,img5,img6,img7,img8
       ]
     }
   ];
