@@ -219,20 +219,14 @@ Avantages :
             >
               Me contacter pour un PFE
             </button>
-            <button
-  onClick={() => {
-    const link = document.createElement('a');
-    link.href = '/CV_AhmedYAICH.pdf'; // chemin dans public/
-    link.download = 'CV_AhmedYAICH.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }}
-  className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
->
-  <Download size={20} />
-  Télécharger CV
-</button>
+            <a 
+               href="/CV_AhmedYAICH.pdf" 
+               download="CV_AhmedYAICH.pdf"
+               className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
+            >
+                <Download size={20} />
+                 Télécharger CV
+            </a>
           </div>
           
         </div>
