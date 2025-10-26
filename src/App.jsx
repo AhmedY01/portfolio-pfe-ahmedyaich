@@ -219,14 +219,28 @@ Avantages :
             >
               Me contacter pour un PFE
             </button>
-            <a 
-               href="/files/cv_ahmedyaich.pdf" 
-               download="cv_ahmedyaich.pdf"
-               className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
-            >
-                <Download size={20} />
-                 Télécharger CV
-            </a>
+            <button
+  onClick={async () => {
+    try {
+      const response = await fetch("/files/cv_ahmedyaich.pdf");
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "cv_ahmedyaich.pdf";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("Erreur lors du téléchargement :", err);
+    }
+  }}
+  className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
+>
+  <Download size={20} />
+  Télécharger CV
+</button>
           </div>
           
         </div>
