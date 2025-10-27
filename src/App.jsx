@@ -225,7 +225,7 @@ Avantages :
                className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
             >
                 <Download size={20} />
-                 Télécharger 
+                 Télécharger CV
             </a>
           </div>
           
