@@ -220,8 +220,8 @@ Avantages :
               Me contacter pour un PFE
             </button>
             <a 
-               href="/cv_ahmedyaich.pdf" 
-               download="cv_ahmedyaich.pdf"
+               href="/CV_AhmedYaich.pdf" 
+               download="CV_AhmedYaich.pdf"
                className="border-2 border-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 transition-all flex items-center gap-2"
             >
                 <Download size={20} />
