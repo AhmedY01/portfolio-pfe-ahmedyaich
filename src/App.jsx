@@ -41,6 +41,53 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Agent IA - DeepSeek-R1 + Wikipedia",
+      description: "Application intelligente combinant la recherche Wikipedia avec l'IA DeepSeek-R1 pour répondre aux questions de manière précise et naturelle.",
+      tech: ["Python", "LangChain", "Ollama", "DeepSeek-R1", "Wikipedia API"],
+      image: photoProfile, // Temporaire - à remplacer
+      detailedDescription: `
+Application intelligente qui combine la recherche Wikipedia avec l'intelligence artificielle DeepSeek-R1 pour répondre aux questions de manière précise et naturelle.
+
+Fonctionnalités principales :
+• Recherche automatique sur Wikipedia : extraction d'informations pertinentes depuis plusieurs sources multilingues (anglais, français, arabe, espagnol, allemand).
+• Analyse par IA locale : utilisation du modèle DeepSeek-R1 (8B paramètres) exécuté localement via Ollama pour garantir la confidentialité totale.
+• Modes d'interaction multiples : mode chat interactif avec historique de conversation et mode question unique pour des requêtes ponctuelles.
+• Génération de réponses contextualisées : l'agent synthétise les informations Wikipedia et génère des réponses claires et structurées.
+• Système de vérification : validation automatique de l'installation (Ollama, modèle IA, dépendances Python).
+• Commandes avancées : historique, effacement, aide intégrée dans le mode chat.
+
+Architecture technique :
+• Module wikipedia_fetcher.py : gestion des requêtes à l'API Wikipedia avec support multilingue, recherche intelligente et extraction de résumés optimisés (max 1000 caractères).
+• Module deepseek_agent.py : orchestration de l'agent IA utilisant LangChain pour coordonner la recherche et la génération de réponses via DeepSeek-R1.
+• Interface principale (main.py) : CLI interactive avec bannière, sélection de langue, vérification système et modes d'utilisation flexibles.
+• Exécution 100% locale : le modèle DeepSeek-R1 s'exécute entièrement sur la machine via Ollama, aucune donnée n'est envoyée à des services tiers.
+• Gestion de l'historique : conservation en mémoire des conversations avec horodatage pour chaque question/réponse.
+
+Défis techniques relevés :
+• Intégration Ollama : configuration et communication avec le serveur Ollama local pour l'exécution du modèle LLM.
+• Optimisation des requêtes : limitation intelligente des résumés Wikipedia pour respecter les contraintes de contexte du modèle.
+• Gestion multilingue : adaptation dynamique de l'interface et des requêtes selon la langue choisie.
+• Expérience utilisateur : création d'une CLI intuitive avec retours visuels (émojis, formatage) et gestion des erreurs robuste.
+• Performance : équilibre entre précision (modèle 8B) et temps de réponse (15-30 secondes par question).
+
+Performances et spécifications :
+• Temps de recherche Wikipedia : 1-2 secondes.
+• Temps de génération IA : 15-25 secondes (selon complexité).
+• Langues supportées : 5 langues Wikipedia (EN, FR, AR, ES, DE).
+• Confidentialité : 100% local, aucune donnée envoyée en ligne (sauf requêtes Wikipedia publiques).
+• Prérequis système : Python 3.8+, 8-12 GB RAM, Ollama installé.
+
+Cas d'usage :
+• Recherche éducative et académique.
+• Assistant personnel pour questions générales.
+• Outil d'apprentissage avec sources vérifiables.
+• Prototype pour applications IA locales et privées.
+      `,
+      screenshots: [
+        // Temporaire - à ajouter plus tard
+      ]
+    },
+    {
       title: "Application Web de Planification de Production Industrielle",
       description: "Offre une gestion complète des entités (machines, produits, tâches) ainsi qu'un module de planification interactif + visualisation.",
       tech: ["Angular", "Node.js", "MySQL", "FastAPI"],
