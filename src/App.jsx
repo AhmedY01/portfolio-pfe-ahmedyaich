@@ -33,6 +33,7 @@ import img8 from './assets/img8.png';
 import info1 from './assets/info1.png';
 import vb1 from './assets/vb1.png';
 import esse1 from './assets/esse1.png';
+import enetcom from './assets/enetcom.png';
 
 
 export default function Portfolio() {
@@ -41,10 +42,10 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Agent IA - DeepSeek-R1 + Wikipedia",
+      title: "Chatbot Intelligent (En cours)",
       description: "Application intelligente combinant la recherche Wikipedia avec l'IA DeepSeek-R1 pour répondre aux questions de manière précise et naturelle.",
       tech: ["Python", "LangChain", "Ollama", "DeepSeek-R1", "Wikipedia API"],
-      image: photoProfile, // Temporaire - à remplacer
+      image: enetcom, // Temporaire - à remplacer
       detailedDescription: `
 Application intelligente qui combine la recherche Wikipedia avec l'intelligence artificielle DeepSeek-R1 pour répondre aux questions de manière précise et naturelle.
 
