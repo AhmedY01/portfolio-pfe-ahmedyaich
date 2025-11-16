@@ -338,40 +338,42 @@ Avantages :
               Mes Projets
             </span>
           </h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            {projects.map((project, index) => (
-              <div 
-                key={index} 
-                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105 w-full md:w-80 lg:w-96"
-              >
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-gray-400 mb-4 text-sm">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, i) => (
-                      <span 
-                        key={i}
-                        className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <button
-                    onClick={() => setSelectedProject(project)}
-                    className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
-                  >
-                    Voir le projet <ExternalLink size={16} />
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {projects.map((project, index) => (
+    <div 
+      key={index} 
+      className={`bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105 ${
+        projects.length === 4 && index === 3 ? 'lg:col-start-2' : ''
+      }`}
+    >
+      <img 
+        src={project.image} 
+        alt={project.title}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-6">
+        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+        <p className="text-gray-400 mb-4 text-sm">{project.description}</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tech.map((tech, i) => (
+            <span 
+              key={i}
+              className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+        <button
+          onClick={() => setSelectedProject(project)}
+          className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
+        >
+          Voir le projet <ExternalLink size={16} />
+        </button>
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 
