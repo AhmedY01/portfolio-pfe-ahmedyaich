@@ -342,7 +342,7 @@ Avantages :
             {projects.map((project, index) => (
               <div 
                 key={index} 
-                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105"
+                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105 w-full md:w-80 lg:w-96"
               >
                 <img 
                   src={project.image} 
